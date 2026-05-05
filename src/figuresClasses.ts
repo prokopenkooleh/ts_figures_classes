@@ -24,7 +24,9 @@ export class Triangle implements Figure {
     numbers.splice(index, 1);
 
     if (max >= numbers[0] + numbers[1]) {
-      throw new Error('Invalid triangle sides');
+      throw new Error(
+        `Сторони ${this.a}, ${this.b}, ${this.c} не можуть утворити трикутник`,
+      );
     }
   }
 
